@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "runningApp",
+    "slug": "runningApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "RunningApp needs your location to track your jog and conquer territory on the map.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "RunningApp needs background location to continue tracking your jog and territory conquest.",
+        "NSLocationAlwaysUsageDescription": "RunningApp needs background location to continue tracking your jog and territory conquest."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "RunningApp needs your location to track your jog and conquer territory on the map."
+        }
+      ]
+    ]
+  }
+}
